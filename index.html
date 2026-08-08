@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devcorestudios Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+  <div class="dashboard-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand-block">
+        <div class="brand-mark">DS</div>
+        <div class="brand-text">
+          <div class="brand-title">Devcorestudios</div>
+          <div class="brand-subtitle">Creative engineering hub</div>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <button class="nav-link">Home<span>01</span></button>
+        <button class="nav-link">Service<span>02</span></button>
+        <button class="nav-link">Templates<span>03</span></button>
+        <button class="nav-link">Projects<span>04</span></button>
+        <button class="nav-link active">Dashboard<span>05</span></button>
+      </nav>
+
+      <div class="sidebar-utility">
+        <button class="nav-link">Settings<span>⚙</span></button>
+        <button class="nav-link">Support / Docs<span>?</span></button>
+      </div>
+    </aside>
+    <div class="sidebar-overlay" aria-hidden="true"></div>
+
+    <main class="panel">
+      <section class="header-bar">
+        <div class="header-left">
+          <button class="menu-toggle" aria-label="Toggle navigation" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="welcome-copy">
+            <p>Devcorestudios workspace overview</p>
+            <h1>Welcome back, Lead Developer</h1>
+            <div class="tag-row">
+              <span class="tag active">Overview</span>
+              <span class="tag">Workspace</span>
+              <span class="tag">Dev Tools</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <div class="ask-ai-block">
+            <div class="ask-ai-copy">
+              <p>Ask Devcore AI anything</p>
+              <span>Open the AI chat panel for quick sprint insights.</span>
+            </div>
+            <button class="open-ai-chat" type="button" id="openAiChat">Open chat</button>
+          </div>
+          <div class="header-controls">
+            <button class="icon-button" aria-label="Notifications">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+            </button>
+            <button class="icon-button" aria-label="Settings">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.6 15 1.65 1.65 0 0 0 3 13.4V12a2 2 0 0 1 0-4v-.4A1.65 1.65 0 0 0 4.6 6a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 9 9.6V10a2 2 0 0 1 4 0v.4a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 15z"></path></svg>
+            </button>
+            <div class="profile-pill">
+              <div class="avatar-circle">LD</div>
+              <div class="profile-details">
+                <strong>Lead Developer</strong>
+                <span>lead@devcorestudios.ai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="card progress-card">
+          <div class="progress-header">
+            <div>
+              <p>Project progress</p>
+              <h2>Epic Launch Sprint</h2>
+            </div>
+            <span class="tag active">Sprint 6</span>
+          </div>
+          <div class="progress-gauge">
+            <div class="gauge-ring" data-progress="76" style="--progress: 76;">
+              <span class="gauge-value">0%</span>
+            </div>
+            <div class="progress-details">
+              <div class="progress-item">
+                <span>Completion</span>
+                <strong>76%</strong>
+              </div>
+              <div class="progress-item">
+                <span>Milestones</span>
+                <strong>9 / 12</strong>
+              </div>
+              <div class="progress-item">
+                <span>Risk level</span>
+                <strong>Low</strong>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card feature-card">
+          <div class="feature-content">
+            <p class="tag">Active sprint</p>
+            <h2 class="feature-title">Daily task progress</h2>
+            <div class="feature-progress">
+              <div class="progress-pill">
+                <span>Daily change</span>
+                <strong>+12%</strong>
+              </div>
+              <div class="progress-pill">
+                <span>Completed</span>
+                <strong>18 tasks</strong>
+              </div>
+              <div class="progress-pill">
+                <span>Today's left</span>
+                <strong>7 tasks</strong>
+              </div>
+            </div>
+            <div class="dev-task-card">
+              <div class="dev-task-block">
+                <p class="task-heading">Completed by</p>
+                <ul>
+                  <li><strong>Aisha</strong> – UI polish</li>
+                  <li><strong>Ravi</strong> – API integration</li>
+                  <li><strong>Sam</strong> – Unit testing</li>
+                </ul>
+              </div>
+              <div class="dev-task-block">
+                <p class="task-heading">Assigned to</p>
+                <ul>
+                  <li><strong>Mira</strong> – Test automation</li>
+                  <li><strong>Noah</strong> – Performance tuning</li>
+                  <li><strong>Jules</strong> – Release docs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card watchlist-card">
+          <div class="watchlist-head">
+            <h3>Active Developers</h3>
+            <p style="margin:0;color:var(--muted);font-size:0.94rem;">4 developers are active right now.</p>
+          </div>
+          <div class="watchlist-list">
+            <div class="watch-item">
+              <div class="watch-meta">
+                <p class="watch-title">Aisha</p>
+                <p class="watch-subtitle">Working on UI polish</p>
+              </div>
+              <div class="watch-value">
+                <strong>4.2h</strong>
+                <span class="watch-change">Logged in</span>
+              </div>
+            </div>
+            <div class="watch-item">
+              <div class="watch-meta">
+                <p class="watch-title">Ravi</p>
+                <p class="watch-subtitle">Working on API integration</p>
+              </div>
+              <div class="watch-value">
+                <strong>3.7h</strong>
+                <span class="watch-change">Logged in</span>
+              </div>
+            </div>
+            <div class="watch-item">
+              <div class="watch-meta">
+                <p class="watch-title">Sam</p>
+                <p class="watch-subtitle">Working on unit testing</p>
+              </div>
+              <div class="watch-value">
+                <strong>5.6h</strong>
+                <span class="watch-change">Logged in</span>
+              </div>
+            </div>
+            <div class="watch-item">
+              <div class="watch-meta">
+                <p class="watch-title">Mira</p>
+                <p class="watch-subtitle">Working on deployment pipeline</p>
+              </div>
+              <div class="watch-value">
+                <strong>2.3h</strong>
+                <span class="watch-change">Logged in</span>
+              </div>
+            </div>
+          </div>
+          <div class="watchlist-footer">
+            <p>Total hours worked this session</p>
+            <strong>15.8h</strong>
+          </div>
+        </article>
+
+        <section class="portfolio-grid">
+          <article class="asset-card meeting-card">
+            <div class="asset-label">
+              <span>Meeting</span>
+              <span class="watch-change">Sync Calendar</span>
+            </div>
+            <div class="meeting-widget">
+              <div class="meeting-left">
+                <div class="calendar-header">
+                  <h4>Calendar</h4>
+                  <div class="calendar-controls">
+                    <input id="icsFile" type="file" accept=".ics" />
+                    <button id="importIcs" type="button">Import .ics</button>
+                    <button id="clearEvents" type="button">Clear</button>
+                  </div>
+                </div>
+                <div id="calendarList" class="calendar-list">
+                  <div class="month-controls">
+                    <button id="prevMonth" type="button">‹</button>
+                    <div id="monthLabel">Month</div>
+                    <button id="nextMonth" type="button">›</button>
+                  </div>
+                  <div id="calendarGrid" class="calendar-grid" role="grid" aria-label="Month calendar"></div>
+                  <div id="agendaList" class="agenda-list-wrap">
+                    <p class="muted">Upcoming agenda</p>
+                    <div id="agendaItems"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="meeting-right">
+                <h4>Notifications</h4>
+                <div id="notificationsList" class="notifications-list">
+                  <p class="muted">No notifications yet.</p>
+                </div>
+                <div class="call-block">
+                  <button id="callButton" class="sync-call-button" type="button">Start Call</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="asset-card">
+            <div class="asset-label">
+              <span>Analytics</span>
+              <span class="watch-change">+2.0%</span>
+            </div>
+            <div class="asset-value">$1,721.30</div>
+            <div class="asset-copy">
+              <span>Units 40</span>
+              <span>Streaming</span>
+            </div>
+          </article>
+          <article class="asset-card">
+            <div class="asset-label">
+              <span>Network</span>
+              <span class="watch-change">+5.6%</span>
+            </div>
+            <div class="asset-value">$1,721.30</div>
+            <div class="asset-copy">
+              <span>Units 16</span>
+              <span>Secure</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="chart-panel">
+          <div class="chart-header">
+            <div>
+              <h3>Portfolio Performance</h3>
+              <p style="margin:4px 0 0;color:var(--muted);font-size:0.93rem;">Monthly performance across studio assets.</p>
+            </div>
+            <div class="time-controls" role="tablist" aria-label="Time range selectors">
+              <button class="range-btn active" data-range="1D">1D</button>
+              <button class="range-btn" data-range="1W">1W</button>
+              <button class="range-btn" data-range="1M">1M</button>
+              <button class="range-btn" data-range="6M">6M</button>
+              <button class="range-btn" data-range="1Y">1Y</button>
+            </div>
+          </div>
+          <div class="chart-frame">
+            <canvas id="studioChart" aria-label="Performance chart"></canvas>
+            <div class="tooltip" id="chartTooltip" role="tooltip"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <div class="ai-chat-overlay" id="aiChatOverlay" aria-hidden="true"></div>
+  <aside class="ai-chat-drawer" id="aiChatDrawer" aria-hidden="true">
+    <div class="ai-chat-header">
+      <div>
+        <p>Core Ops Assistant</p>
+        <span>Chat about sprint progress, tasks, and risk.</span>
+      </div>
+      <button class="close-ai-chat" type="button" id="closeAiChat" aria-label="Close chat">×</button>
+    </div>
+    <div class="ai-chat-messages" id="aiChatMessages"></div>
+    <form class="ai-chat-form" id="aiChatForm">
+      <input id="aiChatInput" type="text" placeholder="Type your question..." aria-label="AI chat input" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </aside>
+
+    <script src="script.js"></script>
+    <div id="rescheduleModal" class="modal" aria-hidden="true">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-label="Reschedule meeting">
+        <button id="closeModal" class="modal-close" aria-label="Close">×</button>
+        <h3>Reschedule Meeting</h3>
+        <p id="modalEventTitle" class="muted">Select a free slot to reschedule</p>
+        <div id="freeSlots" class="free-slots">Loading slots…</div>
+      </div>
+    </div>
+</body>
+</html>
